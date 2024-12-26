@@ -1,12 +1,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --nav-background: #333;
+  --nav-hover: #f39c12;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --nav-background: #111;
+    --nav-hover: #f1c40f;
   }
 }
 
@@ -39,4 +43,33 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: var(--nav-background); /* Adapt to light/dark mode */
+  padding: 15px 30px; /* Extra padding for better spacing */
+}
+
+nav ul {
+  display: flex;
+  gap: 30px; /* Increase spacing between items */
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 600; /* Slightly bolder text */
+  font-size: 1.2rem; /* Increase font size */
+  transition: color 0.3s ease;
+  padding: 10px 15px; /* Add padding to each link */
+}
+
+nav a:hover {
+  color: var(--nav-hover); /* Change color on hover */
 }
