@@ -1,5 +1,7 @@
 import styles from '@/app/page.module.css'
 import Image from 'next/image'
+import nextConfig from '@/../next.config'
+const BASE_PATH = nextConfig.basePath || ''
 
 export default function Footer() {
   return (
@@ -11,7 +13,7 @@ export default function Footer() {
       >
         <Image
           aria-hidden
-          src='/file.svg'
+          src={`${BASE_PATH}/file.svg`}
           alt='File icon'
           width={16}
           height={16}
@@ -25,7 +27,7 @@ export default function Footer() {
       >
         <Image
           aria-hidden
-          src='/window.svg'
+          src={`${BASE_PATH}/window.svg`}
           alt='Window icon'
           width={16}
           height={16}
@@ -39,7 +41,7 @@ export default function Footer() {
       >
         <Image
           aria-hidden
-          src='/globe.svg'
+          src={`${BASE_PATH}/globe.svg`}
           alt='Globe icon'
           width={16}
           height={16}
