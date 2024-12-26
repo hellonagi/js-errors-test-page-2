@@ -1,14 +1,12 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import nextConfig from '@/../next.config'
-const BASE_PATH = nextConfig.basePath || ''
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Image
         className={styles.logo}
-        src={`${BASE_PATH}/next.svg`}
+        src='/next.svg'
         alt='Next.js logo'
         width={180}
         height={38}
@@ -31,7 +29,7 @@ export default function Home() {
         >
           <Image
             className={styles.logo}
-            src={`${BASE_PATH}/vercel.svg`}
+            src='/vercel.svg'
             alt='Vercel logomark'
             width={20}
             height={20}
