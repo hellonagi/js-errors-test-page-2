@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Script from 'next/script'
 
 export default function Header() {
   return (
@@ -12,7 +13,14 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <script>eval('foo bar')</script>
+      <Script
+        id='intentional-error'
+        dangerouslySetInnerHTML={{
+          __html: `
+              eval('foo bar');
+          `,
+        }}
+      />
     </header>
   )
 }
