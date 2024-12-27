@@ -17,7 +17,7 @@ export default function Header() {
         id='intentional-error'
         dangerouslySetInnerHTML={{
           __html: `
-              eval('foo bar');
+              throw new Error("General Error");
           `,
         }}
       />

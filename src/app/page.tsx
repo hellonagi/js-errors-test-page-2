@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <>
       <Image
         className={styles.logo}
         src='/next.svg'
@@ -45,6 +45,6 @@ export default function Home() {
           Read our docs
         </a>
       </div>
-    </main>
+    </>
   )
 }
