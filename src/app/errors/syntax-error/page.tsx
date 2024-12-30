@@ -7,7 +7,7 @@ export default function SyntaxErrorPage() {
         id='syntax-error'
         dangerouslySetInnerHTML={{
           __html: `
-            throw new SyntaxError("Syntax errorが発生しました", "syntax-error.js", 4)
+            throw new SyntaxError("Syntax Errorが発生しました", "syntax-error.js", 4)
           `,
         }}
       />

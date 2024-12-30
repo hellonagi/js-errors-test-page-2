@@ -7,7 +7,7 @@ export default function URIErrorPage() {
         id='uri-error'
         dangerouslySetInnerHTML={{
           __html: `
-            throw new URIError("URI errorが発生しました", "uri-error.js", 6)
+            throw new URIError("URI Errorが発生しました", "uri-error.js", 6)
           `,
         }}
       />

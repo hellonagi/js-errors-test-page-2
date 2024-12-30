@@ -7,7 +7,7 @@ export default function ReferenceErrorPage() {
         id='reference-error'
         dangerouslySetInnerHTML={{
           __html: `
-            throw new ReferenceError("Reference errorが発生しました", "reference-error.js", 3)
+            throw new ReferenceError("Reference Errorが発生しました", "reference-error.js", 3)
           `,
         }}
       />

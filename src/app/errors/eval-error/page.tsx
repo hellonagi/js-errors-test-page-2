@@ -7,7 +7,7 @@ export default function EvalErrorPage() {
         id='eval-error'
         dangerouslySetInnerHTML={{
           __html: `
-            throw new EvalError("Eval errorが発生しました", "eval-error.js", 1)
+            throw new EvalError("Eval Errorが発生しました", "eval-error.js", 1)
           `,
         }}
       />

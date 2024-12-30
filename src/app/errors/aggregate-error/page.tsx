@@ -7,7 +7,7 @@ export default function AggregateErrorPage() {
         id='aggregate-error'
         dangerouslySetInnerHTML={{
           __html: `
-            throw new AggregateError([new Error("some error")], "AggregateErrorエラーが発生しました");
+            throw new AggregateError([new Error("some Error")], "Aggregate Errorが発生しました");
           `,
         }}
       />

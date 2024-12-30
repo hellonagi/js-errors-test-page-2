@@ -7,7 +7,7 @@ export default function TypeErrorPage() {
         id='type-error'
         dangerouslySetInnerHTML={{
           __html: `
-            throw new TypeError("Type errorが発生しました", "type-error.js", 5)
+            throw new TypeError("Type Errorが発生しました", "type-error.js", 5)
           `,
         }}
       />

@@ -7,7 +7,7 @@ export default function RangeErrorPage() {
         id='range-error'
         dangerouslySetInnerHTML={{
           __html: `
-            throw new RangeError("Range errorが発生しました", "range-error.js", 2)
+            throw new RangeError("Range Errorが発生しました", "range-error.js", 2)
           `,
         }}
       />
